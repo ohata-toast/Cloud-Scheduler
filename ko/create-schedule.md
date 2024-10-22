@@ -20,7 +20,6 @@
 일정을 생성하려면 먼저 Cloud Scheduler 서비스를 활성화해야 합니다. [프로젝트 서비스 활성화 가이드](https://docs.nhncloud.com/ko/nhncloud/ko/console-guide/#_21)를 참고하여 Cloud Scheduler 서비스를 활성화하세요.
 
 1. NHN Cloud 콘솔에서 **Application Service > Cloud Scheduler**를 클릭하세요.
-
 2. **일정 생성**을 클릭하세요.
 
 3. 기본 정보 설정을 입력하세요.
