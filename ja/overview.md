@@ -9,7 +9,7 @@ Cloud Schedulerで設定したスケジュールは、開始と終了日時を�
 Cloud SchedulerはNHN Cloudの全てのリージョンで使用できます。
 
 
-![Cloud Scheduler概要イメージ](https://static.toastoven.net/prod_cloud_scheduler/CloudScheduler_overview_ko_800.png)
+![Cloud Scheduler概要イメージ](https://static.toastoven.net/prod_cloud_scheduler/CloudScheduler_overview_ja_800.png)
 
 
 <br>
