@@ -16,7 +16,7 @@
 
 ## スケジュールを作成する
 
-スケジュールを作成するには、まず、Cloud Schedulerサービスを有効にする必要があります。[プロジェクトサービス有効化ガイド](https://docs.nhncloud.com/ko/nhncloud/ko/console-guide/#_21)を参考にしてCloud Schedulerサービスを有効にしてください。
+スケジュールを作成するには、まず、Cloud Schedulerサービスを有効にする必要があります。[プロジェクトサービス有効化ガイド](https://docs.nhncloud.com/ja/nhncloud/ja/console-guide/#_20)を参考にしてCloud Schedulerサービスを有効にしてください。
 
 1. NHN Cloudコンソールで**Application Service > Cloud Scheduler**をクリックしてください。
 2. **+ スケジュール作成**をクリックしてください。
