@@ -31,11 +31,11 @@ To create a schedule, you must first enable the Cloud Scheduler service. See [Gu
             
               | Field | Value | Allowed symbols |
               | --- | --- | --- |
-              | minutes | 0~59 | `*`, `,`, `-` |
-              | Hour | 1 to 1000 | `*`, `,`, `-` |
-              | Day | 1~31 | `*`, `,`, `-` |
+              | Minutes | 0 to 59 | `*`, `,`, `-` |
+              | Hour | 1 to 24 | `*`, `,`, `-` |
+              | Day of month | 1 to 31 | `*`, `,`, `-` |
               | Month | 1 to 12 or JAN to DEC | `*`, `,`, `-` |
-              | Day of the week | 0 to 6 or SUN to SAT | `*`, `,`, `-` | 
+              | Day of week | 0 to 6 or SUN to SAT | `*`, `,`, `-` | 
               
             * **Rate**: Run the schedule at a certain time interval (in minutes/hours/day). You can register for up to 30 days (43,200 minutes, 720 hours).
             
