@@ -9,7 +9,7 @@ Schedules you set up in Cloud Scheduler can run only during the time period you 
 Cloud Scheduler is available in all regions of NHN Cloud.
 
 
-![Cloud Scheduler Over Image](https://static.toastoven.net/prod_cloud_scheduler/CloudScheduler_overview_ko_800.png)
+![Cloud Scheduler Over Image](https://static.toastoven.net/prod_cloud_scheduler/CloudScheduler_overview_en_800.png)
 
 <br>
 This document guides you through the main features, how to use, and terminology of NHN Cloud's Cloud Scheduler service.
