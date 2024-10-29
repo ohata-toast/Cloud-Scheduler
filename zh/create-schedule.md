@@ -27,15 +27,15 @@ To create a schedule, you must first enable the Cloud Scheduler service. See [Gu
     * **Execution Type**: Select the type of schedule execution. The type can be **one-time** or **recurring**, and the settings will vary depending on the type you select.
         * **One-time**: Run the task only once at the time you specify. Enter the **execution date and time**.
         * **Recurring**: Run the task repeatedly at a set time or at a set interval. You can choose between **Cron** or **Rate** types to set when the task runs.
-            * **Cron expression**: Enter 5 fields separated by spaces. The fields are, in order, "Minute hour day month day of week." Each field can be entered as shown in the following table, and you can also use symbols to separate entries in each field or to indicate repetition.
+            * **Cron expression**: Enter 5 fields separated by spaces. The fields are, in order, "minute, hours, day of month, month, day of week". Each field can be entered as shown in the following table, and you can also use symbols to separate entries in each field or to indicate repetition.
             
               | Field | Value | Allowed symbols |
               | --- | --- | --- |
-              | minutes | 0~59 | `*`, `,`, `-` |
-              | Hour | 1 to 1000 | `*`, `,`, `-` |
-              | Day | 1~31 | `*`, `,`, `-` |
+              | Minutes | 0 to 59 | `*`, `,`, `-` |
+              | Hours | 1 to 24 | `*`, `,`, `-` |
+              | Day of month | 1 to 31 | `*`, `,`, `-` |
               | Month | 1 to 12 or JAN to DEC | `*`, `,`, `-` |
-              | Day of the week | 0 to 6 or SUN to SAT | `*`, `,`, `-` | 
+              | Day of week | 0 to 6 or SUN to SAT | `*`, `,`, `-` | 
               
             * **Rate**: Run the schedule at a certain time interval (in minutes/hours/day). You can register for up to 30 days (43,200 minutes, 720 hours).
             
@@ -66,7 +66,7 @@ To create a schedule, you must first enable the Cloud Scheduler service. See [Gu
     * It can take up to 30 seconds for the schedule you create to be reflected, so changes to the schedule contents, including activation/deactivation, may fail during that time.
 
 !!! danger "Caution"
-    If you select the recurrence type as **Rate**, the **started on** may be different from the actual schedule run time. See the [Schedule Execution Examples](create-schedule/#_3) to set it up correctly. 
+    If you select the recurrence type as **Rate**, the **started on** may be different from the actual schedule run time. See the [Schedule Execution Examples](create-schedule/#schedule-execution-examples) to set it up correctly. 
 
 
 
