@@ -62,11 +62,11 @@ To create a schedule, you must first enable the Cloud Scheduler service. See [Gu
 
 !!! tip "Important"
     * Cron expressions are built with five fields, which are in the order "Minute Hour Day Month Day of Week".
-    * For smooth schedule run, set the start date at least 5 minutes ahead of the current time.
+    * For smooth schedule execution, set the start date at least 5 minutes ahead of the current time.
     * It can take up to 30 seconds for the schedule you create to be reflected, so changes to the schedule contents, including activation/deactivation, may fail during that time.
 
 !!! danger "Caution"
-    If you select the recurrence type as **Rate**, the schedule run time may differ depending on the **started on** and **Rate**. See the [How Rate Schedules Works](create-schedule/#rate) and [Schedule Execution Examples](create-schedule/#schedule-execution-examples) to set it up correctly. 
+    If you select the recurrence type as **Rate**, the schedule execution time may differ depending on the **started on** and **Rate**. See the [How Rate Schedules Works](create-schedule/#rate) and [Schedule Execution Examples](create-schedule/#schedule-execution-examples) to set it up correctly. 
 
 ## How Rate Schedules Work
 
