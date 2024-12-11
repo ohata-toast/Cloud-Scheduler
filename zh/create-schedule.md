@@ -62,13 +62,20 @@ To create a schedule, you must first enable the Cloud Scheduler service. See [Gu
 
 !!! tip "Important"
     * Cron expressions are built with five fields, which are in the order "Minute Hour Day Month Day of Week".
-    * The first start time of the Rate type can vary depending on the Rate interval you set.
+    * For smooth schedule execution, set the start date at least 5 minutes ahead of the current time.
     * It can take up to 30 seconds for the schedule you create to be reflected, so changes to the schedule contents, including activation/deactivation, may fail during that time.
 
 !!! danger "Caution"
-    If you select the recurrence type as **Rate**, the **started on** may be different from the actual schedule run time. See the [Schedule Execution Examples](create-schedule/#schedule-execution-examples) to set it up correctly. 
+    If you select the recurrence type as **Rate**, the schedule execution time may differ depending on the **started on** and **Rate**. See the [How Rate Schedules Works](create-schedule/#rate) and [Schedule Execution Examples](create-schedule/#schedule-execution-examples) to set it up correctly. 
 
+## How Rate Schedules Work
 
+Rate schedules run schedules based on the time intervals you set.
+This section explains how Rate schedules work.
+
+* Intial Start Date: The date the rate schedule first starts is the **started on** time you set.
+* Schedule Execution Time: Rate schedules run at the **Rate** interval you set based on the **started on** time. This applies equally to activation after deactivation.
+* When Rate changes: When the rate changes, the schedule runs at the changed rate interval. However, it will run at the changed rate interval based on the **started on** time, regardless of the last execution time.
 
 ## Schedule Execution Examples
 
@@ -84,8 +91,35 @@ To help you understand, we'll show you an example of how a Cron and Rate schedul
     * Last Schedule Execution Time
         * 2024-01-07 12:00:00
 * For Rate schedules
-    * **Rate**: Execute every 12 hours
-    * First Schedule Execution Time
-        * 2024-01-05 00:00:00
-    * Last Schedule Execution Time
-        * 2024-01-08 00:00:00
+    * General cases
+        * **Rate**: Executes every 12 hours
+        * First schedule execution time
+            * 2024-01-05 00:00:00
+        * Last schedule execution time
+            * 2024-01-08 00:00:00
+    * Disable and enable schedule
+        * **Rate**: Executes every 3 hours
+        * First execution
+            * 2024-01-05 00:00:00
+        * Second execution
+            * 2024-01-05 03:00:00
+        * Disable schedule
+            * 2024-01-05 04:00:00
+        * Able schedule
+            * 2024-01-05 10:00:00
+        * Third execution
+            * 2024-01-05 12:00:00
+        * Fourth execution
+            * 2024-01-05 15:00:00
+    * Change **Rate**
+        * **Rate**: Executes every 3 hours
+        * First execution
+            * 2024-01-05 00:00:00
+        * Second execution
+            * 2024-01-05 03:00:00
+        * **Rate**: Change to exeuction every 4 hours
+            * 2024-01-05 05:00:00
+        * Third execution
+            * 2024-01-05 08:00:00
+        * Fouth execution
+            * 2024-01-05 12:00:00
