@@ -35,4 +35,5 @@ You can view schedule information in the bottom area of the screen by selecting 
 * **Basic Information**: Show basic information about the schedule, including the name, description, status, and execution type.
 * **Target Info**: Show the URL, HTTP method, HTTP headers, and parameters to run the schedule.
 * **Execution History**: Show when the schedule is executed, whether it succeeded or failed, whether it was retried, and the execution log.
+    * Execution logs are available for viewing for up to 30 days.
 * **Additional Settings**: Check the retry policy information.
