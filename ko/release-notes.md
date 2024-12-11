@@ -2,7 +2,7 @@
 
 **Application Service > Cloud Scheduler > 릴리스 노트**
 
-## 2024. 12.24.
+## 2024. 12. 24.
 ### 기능 추가
 * 일정 템플릿 기능 추가
 
