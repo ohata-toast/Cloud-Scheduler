@@ -2,6 +2,10 @@
 
 **Application Service > Cloud Scheduler > Release Notes**
 
+## December 24, 2024
+### Added Features
+* Added the schedule template feature
+
 ## November 26, 2024
 
 ### Bug Fixes
