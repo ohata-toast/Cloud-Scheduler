@@ -7,7 +7,7 @@ You can quickly create a schedule by selecting a template you've created.
 This section describes the feature to create and manage templates.
 
 !!! tip "Important"
-    Date data is based on UTC+09:00.A
+    Date data is based on UTC+09:00.
 
 ## Create Template
 Click **+ Create Template**.
@@ -16,8 +16,8 @@ Create a template in the same way creating a schedule. See [Create Schedule](cre
 !!! tip "Important"
     The template name is a required field, the other fields can be set as needed to create a template.
 
-## Change Template
-Select a template to change template information, such as launch information and audience information. Select the template you want to change, then click **Change Template**. See [Create Schedule](create-schedule) to change the template information.
+## Modify Template
+Select a template to change template information, such as launch information and audience information. Select the template you want to change, then click **Modify Template**. See [Create Schedule](create-schedule) to change the template information.
 
 ## Delete Template
 Select a template to delete. You can also delete multiple at the same time. Select the template you want to delete, then click **Delete Template**.

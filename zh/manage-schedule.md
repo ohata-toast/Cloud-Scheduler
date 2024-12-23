@@ -6,11 +6,12 @@ This document explains the feature to manage the schedules you create.
 !!! tip "Important"
     Date data is based on UTC+09:00.
 
-## Change Schedule
-You can select a schedule to change its information, including execution information, target information, and more. Select the schedule you want to change, then click **Change Schedule**. See [Create Schedule](create-schedule) to change the schedule information.
+## Modify Schedule
+You can select a schedule to change its information, including execution information, target information, and more. Select the schedule you want to change, then click **Modify Schedule**. See [Create Schedule](create-schedule) to change the schedule information.
 
 !!! danger "Caution"
     It can take up to 20 seconds for changes to the schedule to be reflected, so changes to the contents of the schedule, including activation/deactivation, may fail during that time.
+    
 
 
 ## Delete Schedule
@@ -35,4 +36,5 @@ You can view schedule information in the bottom area of the screen by selecting 
 * **Basic Information**: Show basic information about the schedule, including the name, description, status, and execution type.
 * **Target Info**: Show the URL, HTTP method, HTTP headers, and parameters to run the schedule.
 * **Execution History**: Show when the schedule is executed, whether it succeeded or failed, whether it was retried, and the execution log.
+    * Execution logs are available for viewing for up to 30 days.
 * **Additional Settings**: Check the retry policy information.
