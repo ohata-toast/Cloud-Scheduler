@@ -6,11 +6,12 @@ This document explains the feature to manage the schedules you create.
 !!! tip "Important"
     Date data is based on UTC+09:00.
 
-## Change Schedule
-You can select a schedule to change its information, including execution information, target information, and more. Select the schedule you want to change, then click **Change Schedule**. See [Create Schedule](create-schedule) to change the schedule information.
+## Modify Schedule
+You can select a schedule to change its information, including execution information, target information, and more. Select the schedule you want to change, then click **Modify Schedule**. See [Create Schedule](create-schedule) to change the schedule information.
 
 !!! danger "Caution"
     It can take up to 20 seconds for changes to the schedule to be reflected, so changes to the contents of the schedule, including activation/deactivation, may fail during that time.
+    
 
 
 ## Delete Schedule

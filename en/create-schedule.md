@@ -19,9 +19,14 @@ This document explains the steps to create a schedule in detail.
 To create a schedule, you must first enable the Cloud Scheduler service. See [Guide to Enabling Project Services ](https://docs.nhncloud.com/en/nhncloud/en/console-guide/#guide-to-enabling-project-services) to enable the Cloud Scheduler service.
 
 1. In the NHN Cloud console, click **Application Service > Cloud Scheduler**.
-2. Click **+ Create Schedule**.
 
-3. Enter basic information settings, then click **Next**.
+1. Click **+ Create Schedule**.
+
+1. To use templates, select **Enable**.
+
+1. If there's a template you want to use, select the template.
+
+1. Enter basic information settings, then click **Next**.
     * **Name**: Enter a name for the schedule you're creating. You can enter up to 32 characters. 
     * **Description**: Enter a description for the schedule you're creating. You can enter up to 255 characters.
     * **Execution Type**: Select the type of schedule execution. The type can be **one-time** or **recurring**, and the settings will vary depending on the type you select.
@@ -42,13 +47,13 @@ To create a schedule, you must first enable the Cloud Scheduler service. See [Gu
         * **Started on**: The date the schedule starts. The start date is required, and if you don't enter it, it is automatically set to the time at the time you saved the schedule.
         * **Ended on**: The date on which the schedule ends. If not set, the schedule will continue to run with the recurrence interval you entered.
 
-4. Set the target for the schedule, then click **Next**.
+1. Set the target for the schedule, then click **Next**.
     * **URL**: Enter the URL to call.
     * **HTTP Method**: Click the drop-down list to select an HTTP method.
     * **HTTP headers**: Click ** + Add** to enter HTTP headers. You can add up to 20 HTTP headers, and the total size of all headers you add can be up to 8 KB combined.
     * **Parameters**: Enter the body of the request. The Parameters field appears when you select the HTTP method as **POST**, **PUT**, or **PATCH**. The maximum parameter size you can enter is 256 KB.
 
-5. After you complete the additional settings, click **Next**.
+1. After you complete the additional settings, click **Next**.
     * **Activate Schedule**: Select whether to activate the schedule.
     * **Retry policy**: You can set to retry a schedule run when it fails. When you select **set**, the **Retry interval** and **Maximum number of retries** fields are displayed.
         * If the API call fails, retry the schedule according to the retry policy you set.
@@ -58,9 +63,10 @@ To create a schedule, you must first enable the Cloud Scheduler service. See [Gu
         * **Retry Interval**: Enter the interval to retry failed schedules. You can set a minimum of 1 minute and a maximum of 60 minutes.
         * **Maximum Number of Retries**: Enter the maximum number of retries. You can set a maximum of 5 retries.
 
-6. In the **Final Review and Save** step, confirm the information you set up earlier and click **Create Schedule**.
+1. In the **Final Review and Save** step, confirm the information you set up earlier and click **Create Schedule**.
 
 !!! tip "Important"
+    * You can use the template feature to quickly enter preset information. See [Manage Template](manage-schedule-template).
     * Cron expressions are built with five fields, which are in the order "Minute Hour Day Month Day of Week".
     * For smooth schedule execution, set the start date at least 5 minutes ahead of the current time.
     * It can take up to 30 seconds for the schedule you create to be reflected, so changes to the schedule contents, including activation/deactivation, may fail during that time.
