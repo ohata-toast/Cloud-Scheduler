@@ -44,7 +44,7 @@ To create a schedule, you must first enable the Cloud Scheduler service. See [Gu
               
             * **Rate**: Run the schedule at a certain time interval (in minutes/hours/day). You can register for up to 30 days (43,200 minutes, 720 hours).
             
-        * **Started on**: The date the schedule starts. The start date is required, and if you don't enter it, it is automatically set to the time at the time you saved the schedule.
+        * **Started on**: The date the schedule starts. The start date is required, The start date can be set from 5 minutes after the current time.
         * **Ended on**: The date on which the schedule ends. If not set, the schedule will continue to run with the recurrence interval you entered.
 
 1. Set the target for the schedule, then click **Next**.
