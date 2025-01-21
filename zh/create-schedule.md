@@ -44,14 +44,14 @@ To create a schedule, you must first enable the Cloud Scheduler service. See [Gu
               
             * **Rate**: Run the schedule at a certain time interval (in minutes/hours/day). You can register for up to 30 days (43,200 minutes, 720 hours).
             
-        * **Started on**: The date the schedule starts. The start date is required, and if you don't enter it, it is automatically set to the time at the time you saved the schedule.
+        * **Started on**: The date the schedule starts. The start date is required, The start date can be set from 5 minutes after the current time.
         * **Ended on**: The date on which the schedule ends. If not set, the schedule will continue to run with the recurrence interval you entered.
 
 1. Set the target for the schedule, then click **Next**.
-    * **URL**: Enter the URL to call.
+    * **URL**: Enter the URL to call. You can enter up to 255 characters.
     * **HTTP Method**: Click the drop-down list to select an HTTP method.
     * **HTTP headers**: Click ** + Add** to enter HTTP headers. You can add up to 20 HTTP headers, and the total size of all headers you add can be up to 8 KB combined.
-    * **Parameters**: Enter the body of the request. The Parameters field appears when you select the HTTP method as **POST**, **PUT**, or **PATCH**. The maximum parameter size you can enter is 256 KB.
+    * **Parameters**: Enter the body of the request. The Parameters field appears when you select the HTTP method as **POST**, **PUT**, or **PATCH**. The maximum parameter size you can enter is 56 KB.
 
 1. After you complete the additional settings, click **Next**.
     * **Activate Schedule**: Select whether to activate the schedule.
