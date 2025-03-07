@@ -51,7 +51,7 @@ To create a schedule, you must first enable the Cloud Scheduler service. See [Gu
     * **URL**: Enter the URL to call. You can enter up to 255 characters.
     * **HTTP Method**: Click the drop-down list to select an HTTP method.
     * **HTTP headers**: Click ** + Add** to enter HTTP headers. You can add up to 20 HTTP headers, and the total size of all headers you add can be up to 8 KB combined.
-    * **Parameters**: Enter the body of the request. The Parameters field appears when you select the HTTP method as **POST**, **PUT**, or **PATCH**. The maximum parameter size you can enter is 56 KB.
+    * **Parameters**: Enter the body of the request. The Parameters field appears when you select the HTTP method as **POST**, **PUT**, or **PATCH**. The maximum parameter size you can enter is 256 KB.
 
 1. After you complete the additional settings, click **Next**.
     * **Activate Schedule**: Select whether to activate the schedule.
