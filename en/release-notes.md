@@ -2,6 +2,13 @@
 
 **Application Service > Cloud Scheduler > Release Notes**
 
+## March 25, 2025
+### Added Features
+* Added the target template feature
+
+### Feature Updates
+* Modified to limit the size of parameters to 256 KB when creating and modifying schedules and templates
+
 ## January 21, 2025
 ### Feature Updates
 * Added restrictions when creating schedules

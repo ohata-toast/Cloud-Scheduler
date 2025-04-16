@@ -33,8 +33,10 @@ Select a schedule, and then click **Activate** or **Deactivate**.
 ## View Schedule Information
 You can view schedule information in the bottom area of the screen by selecting the schedule you're using.
 
-* **Basic Information**: Show basic information about the schedule, including the name, description, status, and execution type.
-* **Target Info**: Show the URL, HTTP method, HTTP headers, and parameters to run the schedule.
+* **Basic Info**: Show basic information about the schedule, including the name, description, status, and execution type.
+* **Target Info**: Show the information about a target to run a schedule . Target information varies depending on the target type.
+    * **Direct Input**: Show the URL, HTTP method, HTTP headers, and parameters to run.
+    * **Target Template**: Show the information you entered for the target template to run.
 * **Execution History**: Show when the schedule is executed, whether it succeeded or failed, whether it was retried, and the execution log.
     * Execution logs are available for viewing for up to 30 days.
 * **Additional Settings**: Check the retry policy information.
