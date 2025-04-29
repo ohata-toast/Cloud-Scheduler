@@ -29,6 +29,10 @@ The template name and description are not copied. This is useful if you want to 
 ## View Template Information
 You can select the template you're using to view template information in the bottom area of the screen.
 
-* **Basic Info**: Show basic information about the template, such as the name, description, and execution type.
-* **Target Info**: Show the URL, HTTP method, HTTP headers, and parameters to run the schedule.
+* **Basic Info**: Show basic information about the schedule, including the name, description, status, and execution type.
+* **Target Info**: Show the information about a target to run a schedule . Target information varies depending on the target type.
+    * **Direct Input**: Show the URL, HTTP method, HTTP headers, and parameters to run.
+    * **Target Template**: Show the information you entered for the target template to run.
+* **Execution History**: Show when the schedule is executed, whether it succeeded or failed, whether it was retried, and the execution log.
+    * Execution logs can be viewed for up to 30 days.
 * **Additional Settings**: Check the retry policy information.
