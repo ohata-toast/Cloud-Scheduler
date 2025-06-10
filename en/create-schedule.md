@@ -10,10 +10,6 @@ A schedule consists of basic information, target info, and additional settings.
 
 This document explains the steps to create a schedule in detail.
 
-!!! tip "Important"
-    Date data is based on UTC+09:00.
-
-
 ## Create Schedule
 
 To create a schedule, you must first enable the Cloud Scheduler service. See [Guide to Enabling Project Services ](https://docs.nhncloud.com/en/nhncloud/en/console-guide/#guide-to-enabling-project-services) to enable the Cloud Scheduler service.
@@ -73,8 +69,10 @@ To create a schedule, you must first enable the Cloud Scheduler service. See [Gu
     * For smooth schedule execution, set the start date at least 5 minutes ahead of the current time.
     * It can take up to 30 seconds for the schedule you create to be reflected, so changes to the schedule contents, including activation/deactivation, may fail during that time.
 
+
 !!! danger "Caution"
-    If you select the recurrence type as **Rate**, the schedule execution time may differ depending on the **started on** and **Rate**. See the [How Rate Schedules Works](create-schedule/#rate) and [Schedule Execution Examples](create-schedule/#schedule-execution-examples) to set it up correctly. 
+    * Cron expressions work based on UTC+09:00. For example, if you enter '0 9 * * \*', the task will run every day at 9:00 AM UTC.
+    * If you select the recurring type as **Rate**, the schedule execution can change depending on the value of  **Started on** and **Rate**. See [How Rate schedules work](create-schedule/#rate) and [Schedule Execution Examples](create-schedule/#_3) to set them up correctly. 
 
 ## How Rate Schedules Work
 
@@ -89,6 +87,10 @@ This section explains how Rate schedules work.
 
 When a schedule runs depends on the start and end dates you set, and what type of schedule you entered.
 To help you understand, we'll show you an example of how a Cron and Rate schedule type would run with the same start and end dates.
+
+!!! TIP "Important"
+    The date data in Schedule Execution Examples is based on UTC+09:00.
+
 
 * **Started on**: 2024-01-05 00:00:00
 * **Ended on**: 2024-01-08 01:00:00
