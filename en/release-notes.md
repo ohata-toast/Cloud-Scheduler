@@ -2,6 +2,10 @@
 
 **Application Service > Cloud Scheduler > Release Notes**
 
+## June 24, 2025
+### Bug Fixes
+* Fixed a bug where parameters (Request Body) had to be entered as JSON objects only.
+
 ## May 27, 2025
 ### Bug Fixes
 * Fixed console messages about the time zone applied to the start and end dates.

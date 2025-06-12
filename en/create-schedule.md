@@ -71,7 +71,7 @@ To create a schedule, you must first enable the Cloud Scheduler service. See [Gu
 
 
 !!! danger "Caution"
-    * Cron expressions work based on UTC+09:00. For example, if you enter '0 9 \* \* \*', the task will run every day at 9:00 AM UTC.
+    * Cron expressions work based on UTC+09:00. For example, if you enter '0 9 \\* \\* \\*', the task will run every day at 9:00 AM UTC.
     * If you select the recurring type as **Rate**, the schedule execution can change depending on the value of  **Started on** and **Rate**. See [How Rate schedules work](create-schedule/#rate) and [Schedule Execution Examples](create-schedule/#_3) to set them up correctly. 
 
 ## How Rate Schedules Work
