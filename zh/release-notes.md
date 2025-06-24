@@ -2,6 +2,21 @@
 
 **Application Service > Cloud Scheduler > Release Notes**
 
+## May 27, 2025
+### Bug Fixes
+* Fixed console messages about the time zone applied to the start and end dates.
+
+## April 29, 2025
+### Bug Fixes
+* Fixed a bug where the schedule execution time was not displayed when a Cron expression was set to every Sunday during schedule creation or editing.
+
+## March 25, 2025
+### Added Features
+* Added the target template feature
+
+### Feature Updates
+* Modified to limit the size of parameters to 256 KB when creating and modifying schedules and templates
+
 ## January 21, 2025
 ### Feature Updates
 * Added restrictions when creating schedules

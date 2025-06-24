@@ -3,9 +3,6 @@
 
 This document explains the feature to manage the schedules you create.
 
-!!! tip "Important"
-    Date data is based on UTC+09:00.
-
 ## Modify Schedule
 You can select a schedule to change its information, including execution information, target information, and more. Select the schedule you want to change, then click **Modify Schedule**. See [Create Schedule](create-schedule) to change the schedule information.
 
@@ -38,5 +35,5 @@ You can view schedule information in the bottom area of the screen by selecting 
     * **Direct Input**: Show the URL, HTTP method, HTTP headers, and parameters to run.
     * **Target Template**: Show the information you entered for the target template to run.
 * **Execution History**: Show when the schedule is executed, whether it succeeded or failed, whether it was retried, and the execution log.
-    * Execution logs are available for viewing for up to 30 days.
+    * Execution history is available for viewing for up to 30 days.
 * **Additional Settings**: Check the retry policy information.

@@ -6,9 +6,6 @@ You can quickly create a schedule by selecting a template you've created.
 
 This section describes the feature to create and manage templates.
 
-!!! tip "Important"
-    Date data is based on UTC+09:00.
-
 ## Create Template
 Click **+ Create Template**.
 Create a template in the same way creating a schedule. See [Create Schedule](create-schedule) to create a template.
